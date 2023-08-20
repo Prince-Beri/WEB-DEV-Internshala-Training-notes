@@ -1,0 +1,36 @@
+Learning objective:
+    -> Explain the significance of AJAX.
+    -> Initiate an HTTP request using AJAX.
+
+Siginificance of AJAX:
+    -> It is a technique to initiate an new HTTP request through javascript without 
+    reloading a web page.
+    
+    -> What happends when user click the like button on facebook In the background a HTTP request
+    In the form of AJAX is initiated for PHP file The PHP code then Interact with database and the 
+    database get updated accordingly now browser dose not render the response instead It's Invokes
+    the javascript function through which we can do any change in the HTML as we may want to.
+
+    Summary: If on any user action we want to make changes in the loaded web page, we can do it by 
+    using javascript by changing the HTML elements.
+    
+    -> If we also want to update the database or to get some information, we need to use AJAX.
+
+    dome code:
+        let httpRequest = new XMLHttpRequest();
+        httpRequest.onreadystatechage = postAjaxFunction;
+        httpRequest.open('POST', 'update_database.php');
+        httpRequest.setRequestHeader('Content-Type', 'application/x-www-form-urlencided');
+        httpRequest.send('email=adity@internshala.com');
+
+
+        function postAjaxFunction(){
+            if(httpRequest.readyState === XMLHttpRequest.DONE){
+                if(httpRequest.status === 200){
+                    var response = JSON.parse(httpRequest.responseText);
+                    alert(response.name + "-" + response.message);
+                }else{
+                    alert('Something went wrong.');
+                }
+            }
+        }

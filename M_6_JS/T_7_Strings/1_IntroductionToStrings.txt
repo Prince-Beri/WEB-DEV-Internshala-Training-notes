@@ -1,0 +1,42 @@
+Learning objective:
+    -> Explain strings.
+    -> Define a string.
+    -> Explain and use template literals.
+    -> Explain strings as objects.
+
+What are strings ?
+    -> It is a text or a string of characters.
+        eg. "123456", "abcdef", "abc123", etc.
+    -> It is always enclosed within quotes ("").
+    -> escape sequence removes the special meaning from the string.
+        eg.
+        
+        let s = "Hello \"World\"!";
+        document.write(s);
+
+        output: Hello "World"!
+
+    Concatenation: It means to link or join together.
+        -> Concatenation operator in javascript is '+' sign.
+
+Template literals:
+    -> It is a string enclosed by a backtick (`).
+    -> It allows us to print a variable within a string.
+    eg.
+        let name = "Joe";
+        let s = `Hello ${name}!`;
+
+        document.write(s);
+
+String as objects:
+    -> let str = new String("Hello World!");
+    -> Length property: It helps us to identify the length of a string.
+    -> The spaces and special characters are also included in the string length.
+    -> so methods
+        -> indexOf()
+        -> slice()
+        -> replace()
+        -> startsWith()
+        -> endsWith()
+        -> include()
+

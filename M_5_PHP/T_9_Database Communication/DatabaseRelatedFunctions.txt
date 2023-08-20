@@ -1,0 +1,31 @@
+Learning objective:
+    -> Explain various database related functions.
+    -> Use database related functions.
+
+Database related functions:
+    -> mysqli_connect(): It is used to establish a connection with the MYSQL server.
+        query: $conn = mysqli_connect($db_hostname, $db_username, $db_password, $db_name);
+
+    -> mysqli_connect_error(): It is uesd to return the last error message from the last call to mysqli_connect().
+        this functions return the value as erroe massage that discribe the error massage.
+        query: echo mysqli_connect_error();
+
+    -> mysqli_query(): It is used to execute an SQL query on the selected database.
+        query: $result = mysqli_query($conn<connection reference object>, $sql<SQL query>);
+        it is return ture if query executed successfully and for SELECT querys its return the reference object.
+
+
+    -> mysqli_fetch_assoc(): It is to fetch the data from the reference object that we get from the mysqli_query()
+        function in case of SELECT queries.
+        query: $row = mysqli_fetch_assoc($result<reference object>);    
+    
+    -> mysqli_error(): It return the last error message for the last call to mysqli_query().
+        query: echo mysqli_error($conn<connection reference object>);
+
+    -> mysqli_colse(): It closes the previously opened connection with the MySQL server.
+        query: mysqli_close($conn);
+        Note : All though connection with the MYSQL server is automatically closed when the entire php code is executed.
+                but we should close the connection as a good practice as its also helps to free the resourses.
+            
+    
+

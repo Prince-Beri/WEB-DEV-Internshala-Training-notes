@@ -1,0 +1,36 @@
+Learning objective:
+    -> Explain why global variables bhehave differently in PHP.
+    -> Access a global variable from inside a function.
+    -> Access a global variable using a predefined built-in associative array $GLOBALS.
+    -> Explain superglobal variables.
+
+why do global variables work differently in PHP?
+    -> It is because we have sperate predefined associative array funcation 
+    that help us to access the global variables. we cannot access the globla 
+    variable directly.
+
+How can we access a global variable from inside a function?
+    -> Yes! we can access the global variables using key word 'global'.
+
+$GLOBALS: It is a predefined built-in associative array.
+    -> access global array variables: $GLOBALS['<variable_name>'];
+    -> change the value of global variable: $GLOBALS['<variable_name>'] = value;
+
+What is a superglobal variable ?
+    -> It is a variable that is always avaliable in all scopes. This means, 
+    it can be accessed from outside of a function or from inside of a function.
+    -> They have a specific purpose.
+    -> They are built-in and cannot be defined externally.
+    -> They can be modified.
+    -> They always exist as an associative array.
+    -> As a  convention, they are named in capital letters.
+
+Built-in associative arrays/ Superglobal variable:
+    -> $_POST
+    -> $_GET
+    -> $_FILES
+    -> $_REQUEST
+    -> $_SERVER
+    -> $_COOKIE
+    -> $_SESSION
+    -> $_ENV

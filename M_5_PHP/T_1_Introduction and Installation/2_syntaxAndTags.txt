@@ -1,0 +1,15 @@
+Learning objectives:
+    -> Explain the basic syntax of a PHP code.
+    -> Create a PHP file.
+    -> Explain the importance of PHP as a programming language for web development.
+
+PHP files have .php extension.
+PHP files are stored inside C:\xampp\htdocs
+PHP statements end with a semicolon.
+
+PHP in web development
+    -> It is easily embedded into HTML.
+    -> It is compatible with Apache web server.
+    -> It does not need to be pre-compiled.
+    -> It has build-in Integration with DBMS - MySQL.
+    

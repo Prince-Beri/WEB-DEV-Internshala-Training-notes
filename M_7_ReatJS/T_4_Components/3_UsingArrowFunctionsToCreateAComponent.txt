@@ -1,0 +1,28 @@
+Learning objective:
+    -> Understand how we can use arrow functions to create a component.
+
+
+eg. const Box = () => {
+    return (
+        <div className='box'>
+            <h1 id='abc' >This is a heading </h1>
+            <p> This is a test paragraph which is created by React This paragraph has no attribute
+                and is contained inside a div which is also created by React.
+            </p>
+        </div> 
+    )
+};
+
+const App = () => {
+    return (
+        <div className='row'>
+            <div className='col'>
+                <Box />
+            </div>
+
+            <div className='col'>
+                <Box />
+            </div>
+        </div> 
+    )
+}

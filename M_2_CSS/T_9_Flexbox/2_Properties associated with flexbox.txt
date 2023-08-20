@@ -1,0 +1,21 @@
+Learning objectives: 
+    -> Flex-basis.
+    -> Flex-grow.
+    -> Flex-shrink.
+
+flex-basis: It is applied to flex items.
+    -> It i used to define the size of the item along the main axis.
+    -> The default value is auto.
+    -> It can defined any length value.
+    -> The length overrides the width property even if explicitly defined.
+    -> If flex-basis: auto and width: auto, then the value defined in width property is considered.
+
+flex-grow: It is applied to flex items.
+    -> Only applicable if the container has available space after placing all the flex items.
+    -> Its default value is 0.
+    -> It causes an item to stetch beyond its specified width in proprotion to other flex items as per their flex-grow values.
+
+flex-shrink: It is applied to flex items.
+    -> Only applicable if the container has deficit space.
+    -> its default value is 1.
+    -> It causes an item to shrink in proprotion to other flex items as per their flex-shrink values.

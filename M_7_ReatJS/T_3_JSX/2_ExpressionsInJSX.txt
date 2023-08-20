@@ -1,0 +1,21 @@
+Learning objective:
+    -> Explain expressions in JSX.
+
+Expressions in JSX: In JSX everything is expression if we put it inside curly brackets {} which
+we called JSX Expressions.
+    eg.
+        const name = 'Prince';
+        const box = (
+                <div className='box'>
+                    <h1 id="abc">This is {name}'s heading</h1>
+                    <p>
+                        This is a test paragraph which is created by React. This paragraph has no attribute and is contained inside a div which is also created by React.
+                    </p>
+                </div>
+            );
+
+            ReactDOM.render(
+                box,
+
+                document.getElementById('react-container')
+            );

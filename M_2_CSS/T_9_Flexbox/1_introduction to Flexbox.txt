@@ -1,0 +1,15 @@
+ Learning objectives: 
+    -> Explain flexbox.
+    -> Apply display: flex property value to any HTML code to create a flexbox.
+    -> Explain flex-direction property and the values associated with it.
+
+Flexbox: It deals with tha alignment of elements inside a parent element.
+
+flex-direction: It is used to define the direction of flex items.
+    its has 4 values:
+            -> row
+            -> row-reverse
+            -> column
+            -> column-reverse
+    -> The default value is 'row'.
+

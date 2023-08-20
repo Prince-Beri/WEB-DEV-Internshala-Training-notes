@@ -1,0 +1,12 @@
+Learning objectives: 
+    -> Explain the float CSS property.
+    -> Create a wireframe using the float CSS property.
+
+float: It places an element either on the left or right side of its container
+       and allow the text and other elements to wrap around it.
+    -> It has 3 values: left, right and none.
+    -> The default value of float for any element is none.
+
+Create a wireframe using float: 
+    -> The approach is similar to display: inline-block.
+    -> we use float: left instead of display: inline-block.

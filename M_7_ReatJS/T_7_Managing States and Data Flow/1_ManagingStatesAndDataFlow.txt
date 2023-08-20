@@ -1,0 +1,203 @@
+Learning objectives:
+    -> Maintain states in an application.
+    -> Explain how data flows between two components.
+
+Cateforisation of states:
+    -> Component state: So far we are dealing with component states in which we defind
+        the state to invidual states.
+        
+        In react we have seen that through props any data can neturally flow down to components tree
+        from top level component to child level components simlarlly state data can also be passed down 
+        to the component tree via props but there is no way any data can flow up from a child component 
+        to a parent component so states are defind to child level component there is no way it can be shared
+        to other top level components and this restricts the sharing the state across different components
+        and somrtimes you might needs to share states across different components as the state data might be 
+        need in those components.
+    
+    How to share states across different components ?
+    
+        -> Defind all the states in top most component which we called Application state. It gives ous 
+           The flexiablety to share state data down to any component in app via props those state capt togather
+           and managed as high up in Application as possiable so that all the components can have access to it.
+           and if any data changes on top the change will float down throught the component tree updating each 
+           component. So this overall TOP-TO-BOTTOM data flow which we have talking about since quit sometime 
+           is known as Unidirectnal data flow.
+
+How to maintain toal count ?
+    -> Access the color state of each box component at once.
+    -> Convert the box component state to application state.
+    
+    Converting app component into a class component.
+    eg.
+        const Box = (props) => {
+
+                return(
+                    <div className='box'>
+                        <h1 className={props.color} >{props.heading}</h1>
+                        <p> This is a test paragraph which is created by React This paragraph has no attribute
+                            and is contained inside a div which is also created by React.
+                        </p>
+                        <button onClick={() => this.changeColor("red")}>Red</button>
+                        <button onClick={() => this.changeColor("yellow")}>Yellow</button>
+                        <button onClick={() => this.changeColor("blue")}>Blue</button>
+                        <button onClick={() => this.changeColor("green")}>Greeen</button>
+                </div>
+                );
+            }
+
+        class App extends React.Component {
+
+            state = {
+                boxes: [
+                    {
+                        heading: "first heading",
+                        color: "black"
+                    },
+                    {
+                        heading: "second heading",
+                        color: "black"
+                    },
+                    {
+                        heading: "third heading",
+                        color: "black"
+                    },
+                    {
+                        heading: "fourth heading",
+                        color: "black"
+                    },
+                    {
+                        heading: "fifth heading",
+                        color: "black"
+                    },
+                    {
+                        heading: "sixth heading",
+                        color: "black"
+                    },
+                    {
+                        heading: "seventh heading",
+                        color: "black"
+                    }
+                ]
+            }
+
+            render(){
+                return (
+                    <div className='row'>
+                        {
+                            this.state.boxes.map( box => 
+                            <div className='col'>
+                                <Box 
+                                  heading={box.heading}
+                                  color={box.color}
+                                />
+                            </div>
+                        )}
+                    </div>
+                );
+            }
+}
+
+Fixing the changeColor():
+    -> Since the color now present in the app component the changeColor() should also go up inside
+    the app component so that it can communicate with state color data but its need to be called with in 
+    box component.
+
+    How can we do this?
+        -> We sil defind the changeColor() inside the app component.
+        -> We will pass this function to the Box component via props along with the other state data.
+         for it to accessable inside the Box component.
+        -> Insdie th Box component, On clicking the button we will call the function through props.
+            since we are storing the color of boxes togather in the form of array on button click we 
+            also.
+        -> we will pass an 'id' to the changeColor() to identify which boxes color should change.
+
+    eg.
+
+        const Box = (props) => {
+
+                return(
+                    <div className='box'>
+                        <h1 className={props.color} >{props.heading}</h1>
+                        <p> This is a test paragraph which is created by React This paragraph has no attribute
+                            and is contained inside a div which is also created by React.
+                        </p>
+                        <button onClick={() => props.changeColor(props.id, "red")}>Red</button>
+                        <button onClick={() => props.changeColor(props.id, "yellow")}>Yellow</button>
+                        <button onClick={() => props.changeColor(props.id, "blue")}>Blue</button>
+                        <button onClick={() => props.changeColor(props.id, "green")}>Greeen</button>
+                </div>
+                );
+            }
+
+        class App extends React.Component {
+
+            state = {
+                boxes: [
+                    {  
+                        id: 1,
+                        heading: "first heading",
+                        color: "black"
+                    },
+                    {
+                        id: 2,
+                        heading: "second heading",
+                        color: "black"
+                    },
+                    {
+                        id: 3,
+                        heading: "third heading",
+                        color: "black"
+                    },
+                    {
+                        id: 4,
+                        heading: "fourth heading",
+                        color: "black"
+                    },
+                    {
+                        id: 5,
+                        heading: "fifth heading",
+                        color: "black"
+                    },
+                    {
+                        id: 6,
+                        heading: "sixth heading",
+                        color: "black"
+                    },
+                    {
+                        id: 7,
+                        heading: "seventh heading",
+                        color: "black"
+                    }
+                ]
+            }
+
+            changeColor(id, color){
+                let boxes = this.state.boxes;
+                boxes[id - 1].color = color;
+                this.setState({
+                    boxes: boxes
+                });
+            }
+
+            render(){
+                return (
+                    <div className='row'>
+                        {
+                            this.state.boxes.map( box => 
+                            <div className='col'>
+                                <Box 
+                                  id = {box.id}
+                                  heading={box.heading}
+                                  color={box.color}
+                                  // when we pass the function to another component via props we must bind the function to 'this' object
+                                  // this is done so that inside the function "this" should continue to refer to the app class object 
+                                  // since the changeColor() will be called from with in the box component the binding will break this inside
+                                  // the changeColor() would refer to something else.
+                                  changeColor={this.changeColor.bind(this)}
+                                />
+                            </div>
+                        )}
+                    </div>
+                );
+            }
+    }

@@ -1,0 +1,9 @@
+Learning objective:
+    -> Use some of the classes present in the bootstrap and use them 
+    to create different page layouts.
+
+For Learn the classes in bootstrap view the file name bootstrap.css which is 
+inside the bootstrap_exapmle which is present in htdocs folder in xampp.
+
+bootstrap has 12 grid struture this means each row can divided into 12 sections each col can take n / 12 
+space where n is any value from 1 to 12.

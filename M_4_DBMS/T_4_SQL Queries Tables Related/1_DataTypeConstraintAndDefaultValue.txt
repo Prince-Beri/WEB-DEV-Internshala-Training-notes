@@ -1,0 +1,34 @@
+Learning objective:
+    -> Explain different components that we associate with every attribute of a table.
+
+Components associated with an attribute:
+    -> Data types
+    -> Constraints
+    -> Default Value
+
+    Data types: 
+        -> Int : It can have +ve, -ve and 0 as a value. 
+        Note: BUT NOT DECIMAL VALUES.
+        
+        -> Float:  It can have Decimal values as (Total number of digits, number of digits after the decimal point)
+            Example: For CGPA 7.3, 8.5 - Float value will be (2, 1). 
+            Note: BUT WE CAN'T ADD -VE VALUE WITH FLOAT DATA TYPE.
+        
+        -> Varchar: It is used when we want to enter the value of an attribute as text.
+            Example: VARCHAR(255). 255 is the length of character in a column.
+        
+        -> Enum: It has values such as: yes, no, true, false.
+
+    Constraints: 
+        -> They are used to specify rules for the data in a table and optional.
+        -> Four commonly used constraints: not null, unique key, primary key, and foreign key.
+        
+        NOT NULL: It means that the column cannot contain any null value.
+        
+        UNIQUE KEY: It means that the column must contain all unique values.
+
+        PRIMARY KEY: It is used to uniquely identify a row in a table. It automatically makes a particular attribute as 'not null' and 'unique'.
+
+        DEFAULT VALUE: These are the values that automatically get added even if we don't specify a particular value for an attribute.
+        
+

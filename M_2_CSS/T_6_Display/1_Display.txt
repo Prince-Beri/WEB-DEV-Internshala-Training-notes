@@ -1,0 +1,23 @@
+Learning Objectives: 
+    -> Apply display CSS properties to style a web page.
+    -> Explain inline, block, inline-block, and none display property values.
+
+Display: It is used to specify how an elemets will align horizontally with respect to other adjacent elements.
+    -> property: value (inline, block, inline-block, none)
+    -> Default value is different for different elements.
+    -> For <p> paragraph elements, the default display property value is block.
+    -> For <a> anchor elements, the default display property value is inline.
+    
+    display: inline
+        -> An element starts beside the pervious element, provided the pervious element allows 
+            it to sit next to it and there is enough space.
+        -> Width and height css properties have no effect.
+    
+    dispaly: block
+        -> An element always starts from a new line even if there is enough space next to the pervious element.
+        -> Takes the entire width avaliable.
+    display: inline-block
+        -> Elements acquire properties of inline and block elements.
+        -> The elements sit next to each other and take only required space.
+    display: none
+        -> Used to hide the HTML elements from the users.

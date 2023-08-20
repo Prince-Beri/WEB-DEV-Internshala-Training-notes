@@ -1,0 +1,12 @@
+Learning objectives:
+    -> Explain an array.
+    -> List down the types of array.
+    -> Explain numeric indexed array.
+
+Array: An array is collection of some values that are of the same data type.
+
+    Numeric indexed array:
+        -> It has a numeric index that starts from zero.
+        -> If we have array which have length = 3 index 0, 1, 2 but we want to add new element.
+            we can add new element at last index + 1 place.
+        

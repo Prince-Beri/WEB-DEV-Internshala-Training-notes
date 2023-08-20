@@ -1,0 +1,37 @@
+Learning objective:
+    -> Explain objects in JS.
+    -> Create an object using JS.
+    -> Access properties of an object using a dot (.) operator and square ([]) brackets.
+
+Object: It is a data type.
+    -> It is a collection of variables.
+        eg. let dog = {
+            // object variables is know as properties.
+            breed: 'Golden retriever',
+            height: '4ft.',
+            age: 2,
+            // function in objects referse as methods.
+            display: function(){
+                document.write("Breed of the Dog is: " + this.breed + " his height is: " + this.height + " and Age is: " + this.age + " Years.");
+            }
+        };
+        dog.display();
+
+Dot (.) operator: It is used to access the property or method of an object.
+    -> It helps to assign a new value to an existing property.
+        eg. dog.height = '4.5ft.';
+
+    -> It helps to define a new property.
+        eg. dog.weight = "32Kg";
+    
+Square [] brackets:
+    -> It is used to access the properties of an object.
+        eg. document.write(dog['breed']);
+    
+    -> It helps us to edit an existing property.
+        dog['breed'] = 'Dalmatian';
+    
+    -> It helps us to define a new property.
+        dog['color'] = 'white with black spots';
+
+

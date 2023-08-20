@@ -1,0 +1,32 @@
+Learning objectives:
+    -> Explain loops.
+    -> List down different types of loops.
+    -> Apply while loops in a PHP code.
+    -> Explain how 'Break' and 'continue' keywords are used in a loop.
+
+Loops in PHP.
+    They are used to run a block of code multiple times.
+    1. while
+    2. do while.
+    3. for.
+    4. foreach
+
+    while: The while loop execute a block of code if and as long as a specific condition is true.
+
+    while(condition){
+        code to execute multiple times
+        ...
+        ...
+    }
+    // code that executes after the loop is over.
+
+    break keyword:
+         while(condition){
+            code to execute multiple times
+            ...
+            ...
+            if(condition_2){
+                break;
+            }
+        }
+        // code that executes after the loop is over.

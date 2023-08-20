@@ -1,0 +1,32 @@
+Learning objective:
+    -> Create a table in a database.
+
+Components associated with an attribute:
+    -> Data types
+    -> Constraints
+    -> Default Value
+
+    Create a rough table, why?
+        -> It's give you the idea how many number of attributes are there.
+        -> Define data type, constraint, and default values for an attribute.
+
+    SQL queries:
+        -> SHOW TABLES; It show any tables that database contains.
+        -> CREATE TABLE <name_of_table> (
+            <column_name_1> <data type> <constraints>, 
+            <column_name_2> <data type> <constraints>, 
+            <column_name_3> <data type> <constraints>, 
+            <column_name_4> <data type> <constraints>, 
+            <column_name_5> <data type> <constraints>, 
+            <column_name_6> <data type> <constraints> 
+        );
+        Example: 
+            Create Table students (
+                s_no INT NOT NULL AUTO_INCREMENT, 
+                name VARCHAR(255) NOT NULL, 
+                registration_number VARCHAR(255) NOT NULL, 
+                gender VARCHAR(255), 
+                despartment VARCHAR(255) NOT NULL,
+                no_of_compartments INT NOT NULL DEFAULT 0, 
+                PRIMARY KEY(s_no)
+            );

@@ -1,0 +1,34 @@
+Learning objective: 
+    -> 'method' and 'action' attributes.
+    -> Why POST request method is preferred in form submission.
+    -> How the POST request is processed by a web server.
+    -> Difference between a GET and POST request method.
+    -> Importance of GET request using various examples.
+
+Form submission: For form submission we have add 2 attributes to from element
+'method' and 'action'.
+
+Why POST request is preferred in form submission?
+    -> It is Because when we use method='POST' the data of user in not rendered through
+    URL. It provid the security to the user infomation.
+
+What happens once the web server receives the HTTP request?
+    -> The web server searches for the PHP file on its computer and starts executing it.
+    -> Data is converted into an associative array and is further stored in $_GET or $_POST 
+    superglobal variables.
+    -> The data is accessed using the superglobal variables.
+        eg. $email = $_POST['email']; or $email = $_GET['email'];
+    -> Data is stored in the database.
+
+
+Method GET and POST:
+    -> GET FROM: 
+        -> The user data is visible in the URL which makes it less secure.
+        -> The data is stored in $_GET superglobal variable.
+        -> Most commonly used request method.
+        
+    -> POST FORM:
+        -> The user data is not visible in the URL which makes it secure.
+        -> The data is stored in $_POST superglobel variable.
+        -> Preferred in case of form submissions.
+    

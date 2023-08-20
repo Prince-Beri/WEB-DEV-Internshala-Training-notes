@@ -1,0 +1,19 @@
+Learning objectives : 
+    -> Font weight css property.
+    -> Font style css property.
+    -> Text align css property.
+    -> Line height css property.
+
+font-weight: used to specify a bold text.
+    -> For paragraph, the default value of font-weight is normal.
+    -> For heading, the default value of font-weight is bold.
+
+font-style: used to specify an italic text.
+
+text-decoration: used to add or remove an underline from a text.
+    -> Default value is none for most elements, except <a> tag.
+
+text-align: used to specify the horizontal alignment of a text.
+    -> Default value for most elements is left.
+
+line-height: used to specify the height of a text line.

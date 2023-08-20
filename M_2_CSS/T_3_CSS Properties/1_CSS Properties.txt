@@ -1,0 +1,16 @@
+Learning objectives :
+    -> Color css property.
+    -> Background color css property.
+    -> Font family css property.
+    -> Font size css property.
+
+Color: The default value of color property is black.
+
+Background-Color: The default value of this property is transparent(no color).
+
+Font-Family: Used to specify a font type to a text.
+    -> Point to consider while using font-family property
+        -> Choose only those fonts that are supported by the browser.
+        -> Diffreent browser support different font types, so choose a font-family that is supported by all the browsers.
+
+Font-size : Used to specify the font size of a text.

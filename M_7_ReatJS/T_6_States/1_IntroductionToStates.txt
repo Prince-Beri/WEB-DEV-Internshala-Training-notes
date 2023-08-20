@@ -1,0 +1,81 @@
+Learning objectives:
+    -> Create a class component.
+    -> Add a state to the class component.
+
+States: These are infomation associated with a component that allows us to create dynamic 
+and interactive components.
+
+Ways to create a component:
+    -> Functional component: Stateless.
+    -> Class component: Includes states.
+
+
+Changing function component to class component.
+
+        Functional component:
+        eg.
+        
+        const Box = () => {
+            return(
+                <div className='box'>
+                    <h1 id='abc'> {props.heading} </h1>
+                    <p> This is a test paragraph which is created by React This paragraph has no attribute
+                        and is contained inside a div which is also created by React.
+                    </p>
+                </div>
+            );
+        };
+
+        Class component:
+        eg.
+        
+        class Box extends React.Component {
+            render(){
+                return(
+                    <div className='box'>
+                        <h1 id='abc'> {this.props.heading} </h1>
+                        <p> This is a test paragraph which is created by React This paragraph has no attribute
+                            and is contained inside a div which is also created by React.
+                        </p>
+                    </div>
+                );
+            }
+        }
+    Note: There is no change in way we use or include our component.
+
+
+Adding buttons to the component.
+    -> class Box extends React.Component {
+            render(){
+                return(
+                    <div className='box'>
+                        <h1 id='abc'> {this.props.heading} </h1>
+                        <p> This is a test paragraph which is created by React This paragraph has no attribute
+                            and is contained inside a div which is also created by React.
+                        </p>
+                    </div>
+                    <button>Red</button>
+                    <button>Yellow</button>
+                    <button>Blue</button>
+                    <button>Green</button>
+                );
+            }
+    }
+Adding state to the component:
+    -> class Box extends React.Component {
+        state = {color: 'black' };
+            render(){
+                return(
+                    <div className='box'>
+                        <h1 id='abc'> {this.props.heading} </h1>
+                        <p> This is a test paragraph which is created by React This paragraph has no attribute
+                            and is contained inside a div which is also created by React.
+                        </p>
+                    </div>
+                    <button>Red</button>
+                    <button>Yellow</button>
+                    <button>Blue</button>
+                    <button>Green</button>
+                );
+            }
+    }

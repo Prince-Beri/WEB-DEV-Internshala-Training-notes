@@ -1,0 +1,39 @@
+Learning objective:
+    -> Pass a function as an argument.
+    -> Define a function using the arrow function.
+
+Function as arguments:
+    -> Function can be passed as an argument.
+    -> The function passed to a function is called 'callback'.
+        eg.
+            let add = function(x, y){
+            let s = x + y;
+            return s;
+        }
+
+        let a = 5, b = 20;
+
+        function action(x, y, z){
+            let r = z(x, y);
+            return r;
+        }
+
+        let r = action(a, b, add);
+        document.write(r);
+
+Arrow functions:
+    -> It is an alternate way to define a function.
+        eg. 
+            let multiply = (x, y) => {
+                let p = x * y;
+                return p;
+            };
+    -> It's farther be shorten. It's depends on 2 conditions.
+        -> It can have alphanumeric characters or hyphen or underscore
+            let multiply = (x, y) =>  x * y;
+            Note : we remove the {} and return statement.
+
+        -> Function has only one argument.
+            let multiply = x => x * x;
+            Note: we can also remove argument brackets ().
+

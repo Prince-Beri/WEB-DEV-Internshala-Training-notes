@@ -1,0 +1,40 @@
+Learning objectives :
+    -> Explain box model.
+    -> Explain the properties associated with the border property.
+    -> List the subproperties of the border property.
+
+ Box Model :   
+___________________________________________________________________
+|                                                                  |
+|          _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _  _ _ _ _ _ _ _ _        |
+|          |                                               |       |
+|          | <padding>  |This is a sample content|         |       |
+|          |                                               |       |
+| <margin> |_ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _|       |
+|                                            border                |
+|__________________________________________________________________|
+
+border-style: It is used to specity a style to the border of an element.
+    -> bolder-style can be solid, dotted, dashed.
+    -> For Default border-style is none for every elemetns.
+
+border-weight: It is used to specify width to the border of an element.
+    -> The default value is 3 pixels.
+    -> Does not work if the border-style value is none.
+
+border-color: It is used to specify a color to the border of an element.
+    -> Does not work if the border-style value is none.
+
+Note: You can use border-style, border-weight, border-color in one single line.
+    -> border: border-weight border-style border-color;
+        -> border: 1px solid red;
+
+subproperties: border-left, border-top, border-bottom, border-right.
+
+Note: You can use border-left, border-top, border-bottom, border-right in single line.
+    -> border: top-bottom left-right;
+        -> border:  10px 20px;
+    -> border: top right bottom left;
+        -> border: 5px 10px 20px 15px;
+
+

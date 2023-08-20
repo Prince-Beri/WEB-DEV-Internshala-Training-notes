@@ -1,0 +1,22 @@
+Learning objective:
+    -> Apply JOIN queries to fetch data from a table.
+
+Q. Get the job location of the Navjot from college1 data base where has 2 tabels students and companies.
+    -> Get the company_id of Navjot from the students tables.
+    -> Get the company records from the companies table using the company_id.
+        
+        Without JOIN Operation:
+            -> SELECT company_id FROM students WHERE name = "Navjot";
+            -> SELECT location FROM companies WHERE id = 4;
+
+Join queries: 
+    -> The idea is to VIRTUALLY COMBINE all the tabels in one table and fetch the data
+    from the combine table in one go.
+    If you look at combine table you will see name of the attributes
+    (eg. students.id, stduents.name, companies.id, companies.name) as somthing (.) somthing
+    this is because in join querie we refers to any attribute by it's table_name.attribute_name
+    
+    -> SELECT 
+    companies.location FROM students INNER JOIN companies
+    ON
+    students.company_id = companies.id WHERE students.name = "Navjot";

@@ -1,0 +1,46 @@
+Learingn objectives:
+    -> Flex shorthand.
+    -> Flex-wrap.
+    -> Flex-flow.
+    -> Justify-items.
+    -> Align-items.
+    -> Self-align.
+
+Flex shorthand trick: 
+    -> flex: (grow, shrink, basis);
+       eg.flex: 0, 0, 200px;
+
+flex-wrap: 
+    -> It is applied to the flex container.
+    -> It is applied only if the container has deficit space.
+    -> It allows the browser to wrap the items together in another line 
+        instead of shrinking them to fit in the same line.
+    -> It has two values: wrap and nowrap.
+    -> Its default value is nowrap.
+    -> It does not affect the flex items when flex-wrap property value is set to wrap.
+
+flex-flow: You can define the flex direction and flex flex-wrap into single line.
+    -> flex-flow: row wrap;
+       eg. flex-flow: flex-direction flex-wrap;
+    -> It is applied to the flex container.
+
+justify-content:
+    -> It is applied to the flex container.
+    -> It is applied only if the container has available space.
+    -> It tells the browser how the available space should be distributed along the main axis, across the items.
+    -> It works only if none of the flex items are allowed to grow.
+    -> It has 6 values: flex-start, flex-end, center, space-around, space-between, and space-evenly.
+    -> It default value is flex-start.
+
+align-items:
+    -> It is applied to flex container.
+    -> It tells the browser how the items should be laid out along the cross axis.
+    -> It has 4 values: stretch, flex-start, flex-end and center.
+    -> It deafult value is stretch.
+
+self-align:
+    -> It is applied to individual flex items.
+    -> It has 4 values: stretch, flex-start, flex-end and center.
+    -> Its default value is stretch.
+    
+

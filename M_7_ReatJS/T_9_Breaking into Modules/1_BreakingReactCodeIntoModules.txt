@@ -1,0 +1,17 @@
+Learning objective:
+    -> Break React code into modules.
+
+ES modules:
+    -> It is a feature allows to create individual javascript files called modules.
+
+The idea is to keep each component in our case Box, Stats in different file and treat it as individual modules.
+And when we use a component into another component we will have to expalicitly import that module into that module.
+
+so how we can do that?
+    -> In our case we have 3 components App, Box and Stats this means we will break this code into 
+    3 modules one for each component.
+
+    -> Now we have to make seprate file for each component.
+        -> Box for box module.
+        -> Stats for stats module.
+        -> App for app module.

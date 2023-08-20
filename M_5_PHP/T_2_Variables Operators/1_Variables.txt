@@ -1,0 +1,18 @@
+Learning objectives:
+    -> Explain variables.
+    -> Assign a value to a variable.
+    -> List down different types of values a variable can store.
+
+Variable and Operators:
+    -> Variable : It starts with a dollar ($). Eg. $a, $str, etc.
+        -> It consists of alphanumeric characters and underscore.
+        -> It should either start with an underscore or alphabet.
+        -> It cannot start with a number.
+        -> It cannot have special characters eg. #, !, -, $, etc.
+        -> It is case sensitive Eg. $a, $A are both different variables.
+    
+    -> Variable can be assigned a value before declaring them first as a variable.
+    -> In PHP, we do not need to specify the data type of variables.
+    -> In PHP, we can replace the value of a variable with a completely different data type.
+    -> Values a variable can store: Integer, String , Float, Boolean, Array, Object, Null.
+    

@@ -1,0 +1,29 @@
+Learning objective:
+    -> Apply do-while, for, and foreach loop in a PHP code.
+
+Loops in PHP
+    -> while
+    -> do-while
+    -> for
+    -> foreach
+
+do-while: it is even run once if condition is false in 1st time.
+
+do{
+    statement 
+    ....
+    ....
+}while(condition);
+
+
+for: For loop has 3 parts Initialization, Condition, Iteration.
+
+foreach: It is special loop that is created only for arrays.
+
+    foreach($array as $element){
+        // code to excute multiple times
+        ...
+        ...
+    }
+    // code that  executes after the loop is over.
+

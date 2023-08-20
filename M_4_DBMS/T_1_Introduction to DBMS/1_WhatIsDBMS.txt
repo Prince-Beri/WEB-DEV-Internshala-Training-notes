@@ -1,0 +1,38 @@
+Learning objective:
+    -> Explain DBMS
+    -> Explain SQL
+    -> Start MySQL using XAMPP
+
+What is DBMS? 
+    -> It is a software application which is used to store all the user related information.
+    
+    flow of data fetching.
+    Database Client -> DBMS -> Database
+
+    why we need DBMS? 
+        -> Data is highly secured.
+        -> Data is stored in an organised manner.
+        -> Data is easily fetched.
+
+    DBMS act as Server.
+        -> It helps in storing and managing user data.
+
+                   Request
+                --------------|
+                |             v   
+        Database Client      DBMS -------> Database
+                ^             |   <------- 
+                |--------------
+                   Response
+        -> The client needs to store or retrive user information.
+        -> The client will find a relevant server.
+        -> The client will connect to the server.
+        -> The client will send a request to the server.
+        -> The server will fetch the data from the database.
+        -> The server will send the response to the client.
+
+SQL is Structured Query Language.
+    -> It is a standard interactive programming language used to communicate with the DBMS.
+    SQL & MYSQL is same ?
+        -> No. SQL It is a language but MySQL is a DBMS.
+    

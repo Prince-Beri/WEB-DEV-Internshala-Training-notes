@@ -1,0 +1,32 @@
+Learning objective:
+    -> Alter an existing table in a database.
+
+Ways to alter data in a table:
+    -> Adding a new attribute.
+    -> Deleting an existing attribute.
+    -> Modifying an existing attribute.
+    -> Changing the name of the attribute.
+    -> Renaming the table.
+
+    Adding a new Attribute:
+        -> ALTER TABLE <name_of_table> ADD <attribute_name> <data type> <constraint>;
+        Example: ALTER TABLE students ADD semester VARCHAR(255) NOT NULL DEFAULT 1;
+
+    Deleting an existing attribute:
+        -> ALTER TABLE <name_of_table> DROP <name_of_attribute or (column_name)>.
+            Example: ALTER TABLE students DROP semester;
+
+     Modifying an existing table:
+        -> ALTER TABLE <name_of_table> MODIFY <name_of_attribute> <data_type> <constraints>;
+            Example: ALTER TABLE students MODIFY no_of_compartments INT NOT NULL DEFAULT 1;
+     
+     Changing the name of the attribute:
+        -> ALTER TABLE <name_of_table> CHANGE <old_attribute_name> <new_attribute_name> <data_type> <constraints>
+            Example: ALTER TABLE students CHANGE no_of_compartment compartment INT NOT NULL DEFAULT 1;
+
+    Renaming the table:
+        -> ALTER TABLE <name_of_table> RENAME TO <new_table_name>;
+            Example: ALTER TABLE students RENAME TO students_college;
+
+    -> DESC <name_of_table>: to check the description about the table.
+            Example: DESC students;

@@ -1,0 +1,48 @@
+Learning objective:
+    -> Explain associated array.
+    -> Explain a multidimensional array.
+
+Associative array: 
+    -> They have string or text as its indices.
+    -> Used when the indices and their association with the values are more important 
+        than the values alone.
+    Defining an associative array:
+        $array_name = array("key" => value, "key" => value);
+        
+        $years = array("Bill" => 1993, "George" => 2001, "Barack" => 2009);
+
+        print value is like: echo #years["Barack"];
+            output: 2009.
+        
+        foreach loop: 
+
+            foreach($years as $name => $year){
+                echo $name . "was first elected in" . $year . "\n";
+            };
+
+Multidimensional array: These are the array of arrays.
+    eg: 
+     <?php
+            $students = array(
+                "Amit" => array(
+                    "Physics" => 77,
+                    "Chemistry" => 86,
+                    "Maths" => 84
+                ),
+                "Chirag" => array(
+                    "Physics" => 84,
+                    "Chemistry" => 92,
+                    "Maths" => 78
+                ),
+                "Vandana" => array(
+                    "Physics" => 91,
+                    "Chemistry" => 88,
+                    "Maths" => 97
+                )
+            );
+
+            foreach($students as $student => $subjects){
+                foreach($subjects as $subject => $mark){
+                    echo $student . " has scored " . $mark . " in " . $subject . "\n";
+                }
+            }

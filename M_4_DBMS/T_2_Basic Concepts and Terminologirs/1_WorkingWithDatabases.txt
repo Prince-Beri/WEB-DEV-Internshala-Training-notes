@@ -1,0 +1,19 @@
+Learning objective:
+    -> Explain how the data is stored in a database.
+    -> List down good practices to follow for creating a table to store data in a database.
+
+
+data is store in database in the form of tables and the table have 2 things attributes and records.
+
+Conventions or good practices follow while creating a table:
+    -> Table name should be in lower case, example: students, faculties_cse, etc.
+    -> Use plural form of noun while naming a table, example: students_cse, classrooms_cse, etc.
+    -> If the table name contains more then one word, we should separate them using an undersore,
+        example: students_cse, etc.
+    -> Attributes name should be in lower case, example: name, designation, etc.
+    -> Attributes name should be in a singular form, example: name, designation, etc.
+    -> If the attributes name contains more then one word, we should separate them using an
+        undersore, example: phone_number, etc.
+    -> Add an additional attribute named 'id' in each table that contains auto incremented 
+        integers. This attribute is also called the primary key of the table.
+    

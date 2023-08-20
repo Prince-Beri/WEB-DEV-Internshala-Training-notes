@@ -1,0 +1,36 @@
+Learning objective:
+    -> The importance of javascript.
+    -> The execution of a javascript file.
+    -> How we can use a javascript file inside an HTML file.
+
+What is Javascript ?
+    -> Javascript is a loosely typed scripting language it's mean this language can be execute directly 
+    without any precompilation unlike the case of java and c++ etc. Javascript is a client side
+    scripting language like HTML. Which mean the web server simplly sends a javascript files to 
+    browser as response without even bothring to konw what the file contains.
+    
+
+What is the need of Javascript ?
+    -> Javascript is use to make interactive web pages by interactive we mean it react to human actions.
+        
+        -> It is used to capture user actions on a web page. like click the button, hovering the mouse on something
+        , or pressing any key on keyboard. All these actions save as javascript events.
+
+        -> It gives  us flexibility to edit the HTML elements after they have been loaded by the browser.
+        eg. when we click on some element the content of element changes.
+
+        
+How can we use Javascript ?
+    -> It is like other language(HTML(.html), CSS(.css), PHP(.php)) we save the file with (.js) extension.
+    we can javascript file into HTML file with script tag. script tag has 2 attributes type and src.
+    type tell the type of  file is javascript and src tell the where is the file located.
+
+        -> eg. <script type="text/javascript" src="js/script.js">
+
+    
+Execution a Javascript file:
+    -> we know javascript files added into body tag of HTML code so then the browser start the rendring the code
+    Its encounters the script tag which is basically for the js file. This initiates a new HTTP Request to fetch the 
+    assocated javascript file and once the javascript file is fetched send to the browser(Response) It is then render
+    by the browser. javascript files not fecthed along with HTML files they fecth by the browser will rendering the code.
+

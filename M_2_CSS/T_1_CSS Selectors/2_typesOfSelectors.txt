@@ -1,0 +1,75 @@
+4. Child Selectors : Selector1  > Selector2 or Parent > Child
+
+    -> We use the concept of parent-child hierarchy to select any HTML elemnet.
+    Example:
+        <body>
+            <div>
+                <ul>
+                    <li>
+                        <a href="http://www.google.com" target="_blank">Google</a>
+                    </li>
+                    <li>
+                        <a href="http://www.facebook.com" target="_blank">Facebook</a>
+                    </li>
+                </ul>
+            </div>
+            <div>
+                <p>
+                    <a href="internshala.com" target="_blank">Internshala</a>
+                </p>
+            </div>
+        </body>
+        Q. we want to select the <a> tag who is inside the <p> tag.
+        Ans. So we use Child Selectors : p > a { color: green; } it's mean p tag is direct parent to a tag.
+
+
+5. Descendant Selectors : 
+    -> Example:
+        <body>
+            <div>
+                <ul>
+                    <li>
+                        <a href="http://www.google.com" target="_blank">Google</a>
+                    </li>
+                    <li>
+                        <a href="http://www.facebook.com" target="_blank">Facebook</a>
+                    </li>
+                </ul>
+            </div>
+            <div>
+                <p>
+                    <a href="internshala.com" target="_blank">Internshala</a>
+                </p>
+            </div>
+        </body>
+
+    Q. We want to select all the <a> tag that are descendant to <div> tags.
+    Ans. div a { color: green; }
+
+5. Grouping Selectors
+    -> They help us to apply the same style to multiple sections of elements.
+    Example: 
+            <body>
+                <div>
+                    <h1>This is heading 1.</h1>
+                    <h2>This is a heading 2.</h2>
+                    <p>This is paragraph 1.</p>
+                    <p>This is paragraph 2.</p>
+                </div>
+            </body>
+    Q. we want to select <p>, <h2> tag togather to apply same properties on them.
+    ans. we use Grouping Selectors : p, h2 { color: green; } 
+
+6. Attribute Selectors: 
+    -> Example :
+    <form>
+            First name: <br/>
+            <input type="text" name="firstname" value="Mickey" /> <br/>
+            Last name: <br />
+            <input type="text" name="lastname" value="Mouse" /> <br/>
+            Password: <br/>
+            <input type="password" name="password" value="Disney" /> <br/><br/>
+            <input type="submit" value="Submit">
+    </form>
+    Q. we want to change the color of <input> tag where type = "text" so we use Attribute Selector.
+    ans. input[type = "text"] { color: red; }

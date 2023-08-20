@@ -1,0 +1,35 @@
+Learning objectives:
+    -> Access HTML elements using DOM.
+    -> Create interactive web pages.
+
+Properties:
+    -> innerHTML: 
+        -> It helps to fetch the content of the HTML element.
+            eg.
+            let el = document.getElementById("p1");
+            alert(el.innerHTML);
+
+        -> It helps to change the content of the HTML element.
+            eg.
+            let el = document.getElementById("p1");
+            el.innerHTML = "This is new content";
+        
+        -> It also be used to change CSS property.
+            eg.
+            let el = document.getElementById("p1");
+            el.style.color = "red";
+
+    -> Event handler: It is used to capture user moments like click, hover, type, etc.
+        
+        -> OnClick: It is used to capature user clicks.
+            eg.
+            let el = document.getElementById("p1");
+            el.onclick = function(){
+                alert("Element is clicked.");
+            }
+        Note: We can use event handler directly on Node element not on Array of Node elements.
+
+            -> Alternate way to using event handlers.
+                -> we simply add the event handler to element attribute make a function calling to it.
+                    eg.
+                    

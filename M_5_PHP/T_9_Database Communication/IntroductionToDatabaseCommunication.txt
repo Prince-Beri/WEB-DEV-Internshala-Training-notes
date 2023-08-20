@@ -1,0 +1,20 @@
+Learning objective:
+    -> Explain the inportance of database related functions in PHP.
+    -> Explain the communication between client, server, and the DBMS.
+    -> Install PHP extension in Linux OS (Ubuntu).
+
+
+
+
+
+Install PHP extension in Ubuntu (Linux OS):
+    -> goto terminal and Paste the command "sudo apt-get install php-mysql".
+    -> Enter your password and press 'Y' to confirm.
+    -> goto folder location : Computer/etc/php/7.4/apache2 now you see the file "php.ini" 
+    -> Open the file in edit mode.
+    -> To open in edit mode goto terminal and paste command "cd /etc/php/7.4/apache2
+        Note : here is the version is 7.4 if you use different version alter the command accordingly.
+    -> now your location is "/etc/php/7.4/apache2" so enter the command : "sudo gedit php.ini".
+    -> now file is open in edit mode search for ";extension=mysqli" 
+    -> remove the semicolan and save the  file.
+    -> restart the apache2 by pressing "sudo service apache2 restart".

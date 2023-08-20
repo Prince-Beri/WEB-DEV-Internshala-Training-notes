@@ -1,0 +1,59 @@
+Learning objective:
+    -> List down diffrent types of JOIN queries.
+
+In MySQL, there are three types of JOIN:
+    -> INNER JOIN
+    -> LEFT JOIN
+    -> RIGHT JOIN
+    
+Here we have two tables students and companies students table 
+stores the information(id, name, department, cgpa, company_id) about the 
+students who study in the college. And the companies table store the information
+(id, name, ctc, location) of the companies who come to college for placements.
+
+And Students table also store the company_id denoting were the students has got
+placed if students is not get placed any where then the comapny_id will be remain
+Null.
+
+INNER JOIN: 
+-> SELECT * FROM students <left_table> INNER JOIN companies <right_table> 
+    ON
+    students.company_id = companies.id;
+
+If we compare the data of this table with the previous table we can see that information
+corsponding to "Sanjay" is  missing also records from companies table corspondes to "Google" 
+and "Facebook" are also missing this is because we are use INNER JOIN now with inner join ONLY
+THOSE RECORDS WHICH HAVE ATLEST ONE ASSOCIATED RECORDS IN OTHER TABLE ARE FETCHED.
+
+For eg. "Ajay" is associated with "Samsung", "Rahul" is associated with "Microsoft" and so on.
+but "Sanjay" has no company record associtated with him that is way record the corspondes to 
+"Sanjay" is not fetched in INNER JOIN. Simlarly those companies which has associated records in 
+Students table are fetched. Like samsung associated with "Ajay", Microsoft is associated wtih "Rahul"
+so on but "Google" and "Facebook" are not associated with any record in students table and that is why
+the records are corspond to them are not fetched. using the inner join.
+
+LEFT JOIN:
+    -> SELECT * FROM students LEFT JOIN companies 
+        ON
+        students.company_id = companies.id;
+Here in the table we can see we have the 6th row extra row corsponding to the information of "Sanjay"
+but still table does not include the record of "Google" and "Facebook" from companies table this is because
+LEFT JOIN INCLUDES ALL RECORDS FROM LEFT TABLE IRRESPACTIVE OF WETHER THEY HAVE ANY ASSOCIATED RECORD
+IN RIGHT TABLE. That is way it's include the record to corspond to "Sanjay" Even tho there is not record 
+associatd with it in compaines table but for right table LEFT JOIN FETCHES ONLY THOSE RECORDS WHICH HAS 
+HAS ATLEST ONE ASSOCIATED RECORD IN LEFT TABLE. that is way it's still does not include to records corsponding to
+"Google" and "Facebook".
+
+RIGHT JOIN:
+    -> SELECT * FROM 
+        students RIGHT JOIN companies
+        ON
+        students.company_id = companies.id;
+    
+Have look at last two rows it's now includes the records that corspondes to "Google" and "Facebook" 
+from the companies table but it does not includes the records corspondes to "Sanjay" from the students table.
+this because THE RIGHT JOIN INCLUDES ALL RECORDS FROM THE RIGHT TABLE IRRESPACTIVE OF WETHER THEY HAVE ANY ASSOCIATED 
+RECORD IN LEFT TABLE that is way include the record corspond to "Google" and "Facebook" Even tho there is not record 
+associatd with it in students table but for the left table RIGHT JOIN FETCHES ONLY THOSE RECORDS WHICH HAS 
+HAS ATLEST ONE ASSOCIATED RECORD IN RIGHT TABLE.that is way it's does not include to records corsponding to
+"Sanjay" from the students table.

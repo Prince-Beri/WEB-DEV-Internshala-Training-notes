@@ -1,0 +1,71 @@
+Learning objectives:
+    -> Create an HTML element using React.
+
+createElement():
+    -> React.createElement(): In react the name of the function is always precided by the library name
+        inside which it is present.
+        -> React: Library name.
+        -> createElement(): Function name.
+
+step 1. Create a React element / javascript object.
+    eg. const heading = React.createElement(
+
+    )
+
+step 2. Pass the arguments to the function.
+    const heading = React.createELement(
+        'The 1st argument is a String that represent the type of HTML element we want to create.',
+        'The 2nd argument is expacted to be a javascript object that contains all the attributes 
+        that we want the HTML element to have ',
+        'The 3rd argument is a String that represent the content go inside the element.'
+        
+        Note: we can also add the child element instead(as an alternative or subsitude) of "content" as a argument.
+    );
+    eg. const heading = React.createElement(
+        'h1',
+        {id: 'abc' },
+        'This is a heading.'
+    );
+
+Creating an HTML element: render()
+    -> It is used to render and display the react element object on the web page.
+
+    ReactDOM.render(
+        '1st argument is a react element OR the javascript object.',
+        '2nd argument is HTML element from the DOM inside which we want to create this new element'
+    );
+    
+    eg.
+        ReactDOM.render(
+            heading,
+
+            document.getElementById('react-container')
+        )
+
+
+Creating multiple HTML elements using React
+    -> eg.
+
+            const heading = React.createElement(
+                'h1',
+                {id: 'abc'},
+                'This is heading.'
+            );
+
+            const paragraph = React.createElement(
+                'p',
+                null,
+                'This is a test paragraph which is created by React. This paragraph has no attribute and is contained inside a div which is also created by React.'
+            );
+
+            const box = React.createElement(
+                'div',
+                {className: 'box'},
+                heading,
+                paragraph
+            );
+
+            ReactDOM.render(
+                box,
+                document.getElementById("react-container")
+            );

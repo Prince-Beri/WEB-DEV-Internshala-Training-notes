@@ -1,0 +1,20 @@
+Leaning objectives: 
+    -> Explain wireframes.
+    -> List down different ways to create a wireframe.
+    -> Create a wireframe using display: inline-block.
+
+What is a wireframe ?
+    -> A wireframe is a skeletal outline of a web page. It consists of 
+    horizontal or vertical lines that form boxes denoting container that 
+    futher contain different elements of the web page.
+
+Different ways to create a wireframe
+    -> display: inline-block
+    -> float
+    -> flexbox
+
+    -> display: inline-block
+        1. Within a container, select either horizontal boxes or vertical boxes that sit next to each other. We will never select both of them at any given time.
+        2. Use a <div> element to represent a box inside the container.
+        3. Change the default display property value of horizontal boxes to inline-block.
+        4. Repeat the steps 1, 2, and 3 for all the boxes inside the main container.

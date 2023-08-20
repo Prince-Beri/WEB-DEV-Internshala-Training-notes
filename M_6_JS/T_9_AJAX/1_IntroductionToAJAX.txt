@@ -1,0 +1,9 @@
+Learning objective:
+    -> Expalin the need for AJAX.
+
+
+AJAX: Asynchronous Javascript And XML.
+    -> Take an example where we like the picture of a friend on facebook the like
+    button changes it color to blue and like count increces by 1. and our name added to
+    like list of that picture. that all hapend because of javascript but we know changes we
+    make with javascript on client side is temprery. And there we Use the AJAX.

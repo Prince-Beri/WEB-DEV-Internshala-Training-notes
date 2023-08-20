@@ -1,0 +1,60 @@
+Learning objective: 
+    -> Explain different types of database relationships.
+    -> List down the steps involved to create an ideal database design.
+
+Database relationships:
+    -> It means the association between two tablse. It is of three types.
+            -> One to Many.
+            -> One to One.
+            -> Many to Many.
+        
+        -> One to many: 
+            -> We know these two tables (students, compaines) are associated with each other
+            as company hire students here we can see that one company can hire multiple students
+            but only one student can hired in one company which was due to restriction post by college.
+            so in one direction a single record from one table only refers to one record of other table.
+            where as other direction a single record can refers to multiple records from the other table.
+            this is why this example follows one to many relationships and for such relationships we add
+            a FOREIGN KEY to the table which have multiple records referring to single record of other table.
+            this is because foreign keys must be able to uniqully identify a row other table hence we have foreign
+            key on the students table as there can be multiple students referring to one company.
+        
+        -> One to one:
+            -> we have two tables states, chief_ministers which we have infomation about the indian states and there 
+            chief_ministers here one state can have only one chief minister at any given time and also one chief minister 
+            can only be the chief minister of one state at any given time. In both directions a single record referes to 
+            a single from the other table and this makes the database relationships as a one to one.
+        
+        Imp. Question is where we add foreign key in such cases?
+            -> In cases of one to one relationships we can add a foreign key either of the tables. just make sure to follow the
+            naming convention It is entirely our prefrence to which table we want to add the foreign key we can even choice combine
+            these tables into one that would not create any redundancy and incomplete information. It completely depends on what all 
+            attributes we want to store if we have both state haevy and chied minister haevy information then we must have to sperate 
+            tables otherwise we may choice to combine the tables.
+
+        Many to many: 
+            -> In this Example we have cab rentail service In which we have 2 tables drivers and customers that store information about 
+            drivers(id, name, rating) and customers(id, name, age) and the rides they are taken also let us 
+            Assumption: The company has not started ride sharing service.
+            Here A driver can offer service to multiple customers, one at a time.
+            Also customer can avail service from multiple driversm one at a time.
+            So in both the directions a single record can referes to multiple records from the other table. this makes the relationship
+            as many to many relationships now we have the same question which table have the foreign key.
+            since its impossible to represent the many to many relationship with two tables directly we created a mediator table to have a 
+            one to many with a original two table.
+            
+            One to many relationships, because: 
+                -> A driver may have multiple rides but a ride will have only one driver.
+                -> A customer may have multiple rides, but a ride will be associated with only  one customer.
+            
+            Steps to get an ideal database design:
+                -> Identify entities that store only one type of information.
+                -> Create a table for every entity and add relevant attributes.
+                -> Identify the type of database relationship between the tables.
+                -> Add the foreign key and if required, create a mediator table.
+                -> Add dummy data to each table.
+                -> Look for data redundancy and see if the tables can be further broken into smaller ones.
+                -> Open MYSQL client and enter SQL queries to create a table.
+
+            
+

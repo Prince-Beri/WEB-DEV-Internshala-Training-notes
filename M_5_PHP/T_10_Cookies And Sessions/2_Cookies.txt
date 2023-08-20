@@ -1,0 +1,31 @@
+Learning objective:
+    -> Explain cookies.
+    -> Apply setcookie() to store cookies.
+    -> Explain the problem associated with cookies.
+
+Cookies: It is small piece of information stored in the browser of a user by
+a website through some code. Cookie infromation is stored in the browser in the
+form of key-value pairs.
+    
+    Cookies are website specific: 
+        -> Every website store the cookies. for eg. when you goto some shopping website
+        and add products to your cart but not buy them forget about them but when you login 
+        again and you cart have the items that is you add previously that is because of Cookies.
+    
+    setcookie(): setcookie("key", "value", time() + 3600 <unix timestamp>);
+
+    In PHP we have built-in superglobal variable: $_COOKIE['key'];
+        eg. $value = $_COOKIE['key'];
+
+    Problem with cookies: It is because it is accessable to user they can edit it.
+    It is never used for login or to store critical infromation. 
+        eg. we can store the non-critical infromation like last visited page by user its help the 
+        website to redirect the user to last visited page automatically.
+    
+
+
+
+
+
+
+

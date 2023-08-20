@@ -1,0 +1,9 @@
+Topies :
+        -> Explain pixels.
+        -> Understand the concept of logical and physical resolution.
+        -> Understand the concept of CSS pixels and device pixels.
+logical pixels : are the css pixels.
+physical pixels: are the device pixels.
+    -> For web development, we always deal with css pixels and not device pixels.
+    -> Logical resolution - It is the term used to specify the number of css pixels 
+        a screen holds when dealing with web development.

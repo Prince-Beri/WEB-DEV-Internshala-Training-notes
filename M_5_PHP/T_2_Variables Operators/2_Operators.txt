@@ -1,0 +1,22 @@
+Learning objectives:
+    -> Explain operators.
+    -> Explain different types of operators and use them in a PHP code.
+
+Operators: They are used to perform operations on values or Variables.
+    -> Arithmetic operators.
+    -> Assignment operators.
+    -> Increment / Decrement operators.
+    -> Comparison operators.
+    -> Logical (Relational) operators.
+
+    Arithmetic operators: +, -, *, /, %.
+
+    Assignment operators: =, += , -=, *=, /=, %=.
+
+    Increment / Decrement: ++, --.
+
+    Comparison (Boolean) operators: Used to compare two operands and return the
+        value 'True' or 'False'.
+        there are 6 types: ==, != , <, <= , >, >=  
+    
+    Boolean expression: &&, ||, !.

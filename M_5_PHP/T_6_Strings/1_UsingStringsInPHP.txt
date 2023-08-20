@@ -1,0 +1,25 @@
+Learning objective:
+    -> Define a stirng using double and single quotes.
+    -> Explain escape character.
+
+String: $variable = "string", you can use both ('') single and ("") double quotes
+    they same except that in double quotes $variable replace by its value also convet escape 
+    squence into special character.
+
+Escape characters: Denoted by a backward slash(\) and escapes the character that follows it.
+    Example: \n, \t, etc.
+    -> Adds a special meaning to the character.
+    -> Removes the special meaning from the character.
+    -> \n : Adds a new line.
+    -> \t : Adds a tab space.
+
+    Escape character also removes the special meaning from a special character and treats it like
+    a normal text. use (\) if you want to remove special meaning from special character.
+    eg. echo "Hello \"$name\"!\n;
+    output: Hello "Joe"!
+
+
+Defining a string using single ('') quotes.
+    -> It is simpily print the string as such even we use any escape squence.
+
+

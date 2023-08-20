@@ -1,0 +1,37 @@
+Learning objective:
+    -> Insert, Fetch, Update and Delete records from a table using SQL queries.
+
+Insert : To add the data into table.
+    -> INSERT INTO <table_name> (attribute_name1, attribute_name2, attribute_name3, attribute_name4)
+        VALUES ("value1", value2, "value3");
+        Example: INSERT INTO students (name, registration_number, gender)
+                 VALUES ("Sourav", 123007, "Male");
+        Note: we can add values into columns which we specify no_of_columns can be less then actual columns.  
+
+    -> INSERT INTO <Table_name> VALUES (value1, "value2", value3, "value4", "value5");
+        Example: INSERT INTO students VALUES (2, "Arpana", 123009, "Female", "CSE");
+        Note: when we are use only INSERT INTO <table_name> VALUES we have to specify values to every column.
+
+Fetching records from a table:
+    -> Fetching all of the data at once. : SELECT * FROM students;
+    -> Fetching specific data.
+        -> WHERE: SELECT * FROM students WHERE compartment > 0;
+        -> ORDER BY and ASC : SELECT * FROM students ORDER BY name ASC;
+        -> UPDATE and SET: UPDATE students SET 
+                           registration_number = 123010,
+                           compartment = 3
+                           WHERE s_no = 2;
+        -> DELETE: DELETE FROM Students WHERE s_no = 2;
+
+    how conditional statment write:
+        -> attribute_name operator value;
+        -> condition1 operator condition2;
+
+    conditional signs
+    > greater then.
+    < less then
+    = equal to
+    != Not equal to 
+    <= less then equal to
+    >= greater then equal to
+        

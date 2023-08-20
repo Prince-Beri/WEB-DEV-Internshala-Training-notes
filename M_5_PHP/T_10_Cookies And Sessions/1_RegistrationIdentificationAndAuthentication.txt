@@ -1,0 +1,11 @@
+Learning objective:
+    -> Explain the basic concepts behind registration and login.
+
+
+-> Registration: It is a simple process where you provide some of your information which is stored in some database.
+
+-> Identification & Authentication: 
+    Login Form: In which we have mostly 2 feilds email/username and password which helps us to identify as user And 
+    password feild authenticates the user is trying to login is the same user as he/she register.
+
+

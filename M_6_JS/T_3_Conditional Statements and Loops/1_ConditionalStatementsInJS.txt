@@ -1,0 +1,9 @@
+Learning objective:
+    -> Apply different conditional statements in a javascript code.
+
+Conditional statements:
+    -> if.
+    -> if else.
+    -> if-elseif-else: In PHP we use "elseif" as single word but in js we use 
+        "else if" with a space between them that is the only difference.
+    -> switch.

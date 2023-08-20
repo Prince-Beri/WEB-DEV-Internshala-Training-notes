@@ -1,0 +1,57 @@
+Learning Objectives :
+    -> Padding and its subproperties.
+    -> Margin and its subproperties.
+    -> Height and width properties.
+    -> Box-sizing property.
+
+Padding: Padding is the space around the content of an element inside its border.
+    -> Default value is 0px.
+    -> if we define 4 different values.
+       padding: 10px, 8px, 6px, 4px;
+       padding: top, right, bottom, left; its more in clock-wise direction. stating fom top side and end with left side.
+    
+    -> if we define different 3 values.
+        padding: 10px, 8px, 6px;
+        padding: top, right, bottom; there is no left padding in that case.
+    
+    -> if we define 2 different values.
+        padding: 10px, 8px; so in that situation top and bottom values is considered equal. and left and right values is considered equal. 
+
+    -> if we define only 1 value.
+        padding: 10px;
+        it means equal padding from all the sides.
+
+Subproperties of padding: 
+    -> padding-top, padding-right, padding-bottom, padding-left.
+
+Margin: It is space around the element outside its border and is added to maintain space between adjacent elements.
+    -> Default: It is different for all elements eg. for <p> its left and right margin is 0px by default but top and bottom margin equal to it is same as its font-size.
+    -> if we define 4 different values.
+       margin: 10px, 8px, 6px, 4px;
+       margin: top, right, bottom, left; its more in clock-wise direction. stating fom top side and end with left side.
+    
+    -> if we define different 3 values.
+        margin: 10px, 8px, 6px;
+        margin: top, right, bottom; there is no left margin in that case.
+    
+    -> if we define 2 different values.
+        margin: 10px, 8px; so in that situation top and bottom values is considered equal. and left and right values is considered equal. 
+
+    -> if we define only 1 value.
+        margin: 10px;
+        it means equal margin from all the sides.
+
+    Subproperties of margin: 
+        -> margin-top, margin-right, margin-bottom, margin-left.
+
+Height and Width: 
+    -> value = auto. It maens minimal space needed to fit in the content.
+    -> Default value of height is auto.
+    -> Default value of width is different  for different elements.
+
+    -> Actual height occupied = border-top + padding-top + defind height + padding-bottom + border-bottom.
+    -> Acutal width occupied = border-left + padding-left + defind width + padding-right + border-right.
+
+Box-Sizing: It is used to defind height and border either in the content box or the border box.
+    -> border-sizing: value where, value = border-box/content-box.
+    -> Default value is content-box.

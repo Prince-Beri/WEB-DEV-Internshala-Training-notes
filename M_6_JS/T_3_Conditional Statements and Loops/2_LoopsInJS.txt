@@ -1,0 +1,37 @@
+Learning objective:
+    -> Apply different loops in a Javascript code.
+    -> Explain for-of, for-in loops in JS.
+    -> Explain foreach function in JS.
+
+Loops: 
+    -> while loop: same as we learn in PHP.
+    -> do while loop: same as we learn in PHP.
+        Note : do while vs while 
+            -> The condition is checked at the exit point instead of the entry point.
+            -> The code block is still executed even if the codition fails for the very 1st time.
+    
+    for-of loop: It is same as foreach loop in PHP.
+        eg. 
+            "use strict";
+            const arr = [2, 4, 6, 8, 10];
+            for(let element of arr){
+                document.write(element);
+            }
+
+    for-in loop: It is used for javascript objects.
+        eg. 
+            "use strict";
+            const obj = { George: 2001, Barack: 2009, Donald: 2017 };
+            for(let name in obj){
+                document.write(name + " got elected in " + obj[name]);
+            }
+
+    foreach loop: It is used as a loop but not a loop.
+        -> It is a function.
+        -> It is used to iterate through arrays.
+        eg. 
+            "use strict";
+            const arr = [2, 4, 6, 8, 10];
+            arr.forEach(function(element){
+                document.write(element + " ");
+            });

@@ -1,0 +1,38 @@
+Learning objective:
+    -> Explain what a foreign key is.
+
+How to connect the records of two tables in a database?
+    -> Foriegn key.
+
+What is a foreign key?
+    -> A foreig is an attribute in a table that refers to a primary key attribute
+        of any other table. It can contain values only from the primary key attribute
+        it is referring to and acts as a constraint.
+    
+    Naming convention: The foreign key should be named as the name of the table to
+    which the foreign key is pointing to and the name should be in a sigular form.
+    
+    Foreign key syntax: Here we have 2 tables compaines, students we have to create
+    compaines table first and then the students table this is because while creating 
+    students table we will have to defind the company_id as a Froeign key and for this
+    we will have to set the reference attribute which is the id attribute of the company table.
+    so company table must be present before we create the students table.
+
+    SQL queries for 'compaines' table.
+    -> CREATE TABLE companies (
+        id INT NOT NULL AUTO_INCREMENT,
+        name VARCHAR(255) NOT NULL,
+        ctc VARCHAR(255) NOT NULL,
+        location VARCHAR(255) NOT NULL,
+        PRIMARY KEY(id)
+    )
+
+    SQL queries for 'students' table.
+    -> CREATE TABLE students (
+        id INT NOT NULL AUTO_INCREMENT,
+        name VARCHAR(255) NOT NULL,
+        cgpa FLOAT NOT NULL,
+        company_id INT,
+        PRIMARY KEY(id),
+        FOREIGN KEY(company_id) REFERENCES companies(id)
+    );

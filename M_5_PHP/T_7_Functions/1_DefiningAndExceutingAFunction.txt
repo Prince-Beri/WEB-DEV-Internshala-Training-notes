@@ -1,0 +1,46 @@
+Learning objective:
+    -> Explain and define a function.
+    -> Explain the parts of a function.
+    -> Explain the except of a function.
+
+what is a function?
+    -> It is a block of code that performs a specific task.
+    -> It takes data called "function arguments".
+    -> It can takes any number of arguments.
+    -> It return only one value at a time.
+
+function <function_name>(argument1, argument2, ... n){
+    code to be execute.
+    ...
+    ...
+    ...
+}
+
+Parts of a function:
+    -> function defination.
+    -> function calling.
+
+    function defination: It is the part where we defind the what is name of the function
+    what argumnets it accept and what value it will return.
+    eg. function <function_name>(argument1, argument2, ... n){
+    code to be execute ...
+    ...
+    ...}
+
+    function calling: It is the part where we assign the values to functions get the 
+    return value from the function after execution.
+
+    eg. 
+        // function defination.
+    function get_max($a, $b){
+        if($a > $b){
+            return $a;
+        }else{
+            return $b;
+        }
+    }
+
+    // function calling.
+        $max = get_max(5, 10);
+
+        Output: 10 ($max = 10).

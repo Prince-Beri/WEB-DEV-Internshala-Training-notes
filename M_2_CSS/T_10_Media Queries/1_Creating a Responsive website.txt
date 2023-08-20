@@ -1,0 +1,16 @@
+Leaning objective: 
+    -> Explain what is a responsive website.
+    -> Create a web page for responsive website.
+    -> Explain viewport.
+    -> Explain media queries.
+
+Responsive website: It is that website which can change there apperance according to size of the device.
+
+Viewport: It is the area of browser window in which the web content visable to the user.
+
+Media queries: media queries using which we can write css for different viweport widths.
+    -> The browser will include a block of CSS properties only if a certain condition is true.
+    -> Mobile: @media(max-width: 600px)
+    -> Tablet: @media(max-width 1000) and (min-width: 600px);
+    -> Laptop: @media(min-width: 1000);
+    -> <meta name="viewport" content="width=device-width, initial-scale=1">

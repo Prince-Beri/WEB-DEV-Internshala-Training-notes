@@ -1,0 +1,35 @@
+Learning objective:
+    -> Explain foreach(), map(), and filter() with the help of example.
+
+Array methods:
+    -> push()
+    -> pop()
+    -> foreach():
+        -> It is used as a loop but is not a loop.
+        -> It is a function / method used to iterate through arrays.
+        eg. const arr = [2, 4, 6, 8, 10];
+        arr.forEach(function(element){
+            document.write(element + " ");
+        });
+    -> map(): It is specific to array objects.
+        -> It runs on an array and creates a new array.
+            eg.
+            let numbers = [1, 2, 3, 4, 5];
+            // map return the new array 
+            let square = numbers.map(x => x * x);
+
+            square.forEach(function(element) {
+                document.write(element + " ");
+            });
+
+    -> filter(): It is used to create a filter on the elements of an array based on
+    the condition provided by the function.
+        -> It creates a new array and assigns the returned values by the filter() to this array.
+        eg.
+            let numbers = [1, 2, 3, 4, 5];
+            // filter return the new array 
+            let even_numbers = numbers.filter(x => x * x % 2 == 0);
+
+            even_numbers.forEach(function(element) {
+            document.write(element + " ");
+            });

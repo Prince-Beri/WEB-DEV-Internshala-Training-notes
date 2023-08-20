@@ -1,0 +1,20 @@
+Learniug objective:
+    -> Apply breakpoints to create a layout.
+
+Breakpoint chart: 
+
+ Device             Range       Symbol      Breakpoint
+  Mobile device      0-575                      >= 0
+  Mobile landscape   576-767       sm           >= 576
+  Tablet             768-991       md           >= 768
+  Desktop            992-1199      lg           >= 992
+  Xl  desktop        1200-1399     xl           >= 1200
+  XXl desktop        1400-         xxl          >= 1400
+
+eg. col-md-5:
+    -> The breakpoint is always used in between 'col' and 'n'.
+    -> It is used to specify after which point the column will be sized accordingly.
+    -> The size of the column will be 5/12 for viweport >= 768 pixels.
+    -> The width of the column will be 3/12 for all the devices with viewport >= 0 pixel.
+
+Mobile first approach: It's means we start the from the mobile design view and then goto tablet and Laptop view.

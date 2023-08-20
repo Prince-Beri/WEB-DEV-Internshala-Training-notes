@@ -1,0 +1,14 @@
+Learning objective:
+    -> Understand why props are uneditable.
+
+Props are uneditable:
+    -> This is because props are read-only and cannot be edited with in a component.
+
+    -> Props are used by components to talk to each other and share information. But 
+        information is passed only from a parent component down to a child component
+        that's how data can flow. this gives parent component control on what data the
+        child component should display.
+            
+        eg. like we can change info that we passed to the child components just at one 
+            place. and it's changes the data to be displayed in UI inside those components.
+            This also helps us work as a unit.

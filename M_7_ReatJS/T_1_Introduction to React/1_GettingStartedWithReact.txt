@@ -1,0 +1,19 @@
+Learning objectives:
+    -> Explain React and its importance.
+    -> Install Babel extension for VS code.
+
+
+What is React ?
+    -> It is javascript library used to build user interfaces.
+
+What is a javascript library ?
+    -> It is a javascript file that contains some predefined functions. which we 
+    use in javascript code to accomplish complex tasks with ease.
+
+React history : It is created by Jordan Walke who is software engineer working at facebook. he 
+    develope react back in 2011. which was then implemented into facebook news feed and 
+    instagram in 2012.
+
+importance of React:
+    -> React helps ous to Build user interfaces using small reusable pieces of code which 
+    we called Components. we pick these components to build frontend part of web page.

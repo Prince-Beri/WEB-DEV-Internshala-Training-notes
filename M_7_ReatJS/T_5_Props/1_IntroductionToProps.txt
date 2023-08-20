@@ -1,0 +1,37 @@
+Learning objective:
+    -> Understand and customize components using props.
+
+Props:
+    -> Props or properties of a component are information that can be passed to a 
+        component. As we pass arguments to a function.
+
+        Note: we can name a props as we like.
+
+        eg. const App = () => {
+            return (
+                <div className='row'>
+                <div className='col'>
+                // here we passed props heading to the component as attribute to the custom component 
+                tag the props are then  passed values as 'first heading' and 'second heading'.
+                    <Box heading='first Heading' />
+                </div>
+
+                <div className='col'>
+                    <Box heading='second Heading' />
+                </div>
+                </div>
+            );
+        }
+Accessing the props: The props here is a object if we want to access it we can access it by
+    using dot (.) operator.
+        eg.
+        const Box = (props) => {
+            return (
+                <div className='box'>
+                <h1 id='abc' >{props.heading}</h1>
+                <p> This is a test paragraph which is created by React This paragraph has no attribute
+                    and is contained inside a div which is also created by React.
+                </p>
+                </div> 
+            );
+        }

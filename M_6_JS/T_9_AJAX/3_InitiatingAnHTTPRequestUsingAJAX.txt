@@ -1,0 +1,8 @@
+Learning objective:
+    -> Initiate an HTTP request using AJAX.
+
+AJAX is executed in 3 layers.
+    -> The first layer is the JS code which initiate the AJAX request.
+    -> The second layer is when the PHP code gets executed.
+    -> And, once the PHP code is executed it comes back to javascript ie. inside the function which is the layer three.
+    

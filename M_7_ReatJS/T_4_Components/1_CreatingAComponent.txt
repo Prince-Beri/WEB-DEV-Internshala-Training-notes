@@ -1,0 +1,26 @@
+Learning objective:
+    -> Create a component.
+
+-> we need to make shore that when ever we choice a component it should be as small as possiable
+ideally only one responsiblity should be associated with one component if we comes accross any component
+that has more then one responsiblity we need to breck that component father until it is responsible 
+for exectly one thing.
+
+
+function Box () { 
+    return (
+        <div className='box'>
+            <h1 id={myAttr} > This is a heading. </h1>
+            <p> This is a test paragraph which is created by React This paragraph has no attribute
+                and is contained inside a div which is also created by React.
+            </p>
+        </div>
+    );
+}
+
+ReactDOM.render(
+    <Box />, 
+    document.getElementById('react-container');
+);
+
+Note: The function name should be written in capitalized form.

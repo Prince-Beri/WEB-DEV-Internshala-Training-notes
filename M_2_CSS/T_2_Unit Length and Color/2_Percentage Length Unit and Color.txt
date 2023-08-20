@@ -1,0 +1,11 @@
+Learning Objectives :
+    -> Explain the percentage length unit.
+    -> List different ways to specify colors on a web page.
+Percentage : 
+    -> It is relative length unit.
+    -> It gets converted into pixels as the web gets rendered.
+    -> Percentage is evaluated relative to the property of its parent element.
+    -> Explore length units: em, rem.
+Color :
+    -> RBG (red, blue, green) the rage of each color is 0-255.
+    -> HEX (FF0000) the range of each color is 00-FF. And The FF is Case Insenstive.

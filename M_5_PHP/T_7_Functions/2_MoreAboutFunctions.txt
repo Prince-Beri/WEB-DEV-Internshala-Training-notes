@@ -1,0 +1,41 @@
+Learning objective:
+    -> List various rules and conventions to name a function.
+    -> Assign default values to function arguments.
+    -> Explain the difference between a local and global variable.
+    -> Explain the global variables with the help of an example.
+
+
+Naming a function: Rules and conventions followed while naming a function.
+    -> Can only contain alpha-numeric characters or the underscore.
+    -> It cannot contain special characters like !, -, $ , etc.
+    -> It cannot start with a number.
+    -> Use an underscore if the name contains two or more words.
+    -> Name should be self-explanatory.
+
+Assigning default values to function arguments:
+    -> 
+    // function defination with default value.
+    function get_max($a, $b = 0){
+        if($a > $b){
+            return $a;
+        }else{
+            return $b;
+        }
+    }
+
+    // function calling with default value.
+    $max = get_max(-5) . "";
+
+    Note: if Defind the arguments value at function 
+    calling part the function argument default value is egnored.
+
+Scope of a variable.
+    -> Locally (Local variable).
+    -> Globally (Global variable).
+
+    -> Local variable: Defined within a function.
+        -> Their scope is limited to only inside of the function.
+
+    Global variable: Defined Outside a function.
+        -> Their scope is limited to only outside the function.
+        

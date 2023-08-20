@@ -1,0 +1,26 @@
+Learning objective:
+    -> Apply various bootstrap classes to create a layout of a web page.
+
+Bootstrap classes:
+    -> align-items
+    -> align-self
+    -> justify-content
+    -> offset
+
+    align-items:
+        -> It takes three values: start, center, and end.
+        -> It defines the vertical alignment of columns inside a row when there is an extra height.
+        -> It can't be assign to flex-items.
+    
+    Align-self:
+        -> It takes three values: start, center, and end.
+        -> It defines the vertical alignment of each column inside a row when there is an extra height.
+        -> Can only be applied to flex items.
+
+    Justify-content:
+        -> It takes three values: start, center, and end.
+        -> It defines the horizontal alignment of the columns inside a row when there is an extra width.
+        
+    Offset:
+        -> It is leave the gap of (1-11) n units before the column where you use it.
+        

@@ -1,0 +1,9 @@
+Learning objectives:
+    -> Explain the importance of PHP in web development.
+
+PHP is a general-purpose scripting language especially suited for web development.
+
+Excuting the PHP file
+    -> It is a server side scripting language.
+    -> It helps to connect to the DBMS to store and fetch information.
+    

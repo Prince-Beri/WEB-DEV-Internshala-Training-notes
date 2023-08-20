@@ -1,0 +1,47 @@
+Learning objective:
+    -> How we can pass aruments to a function by a value.
+    -> Anonymous function with the help of an example.
+
+Function: Is is a block of code that performs a specific task.
+    -> It takes data to perform tasks called 'function aguments'
+    -> It can take any number of arguments.
+    -> It returns only one value at a time.
+
+    function has 2 parts : 
+        -> function defination 
+            eg.
+                function get_max(a, b){
+                    if(a > b){
+                        return a;
+                    }else{
+                        return b;
+                    }
+                }
+        -> function calling.
+            eg. 
+                let max = get_max(5, 10);
+                document.write(max);
+        
+    
+    Call by value / reference.
+        -> It allow us to pass arguments to a function.
+        -> In JS, we can pass arguments to a function using only call by value.
+
+    Summary:
+        -> For arrays and objects, if we change the argument variable itself, the 
+        original variable remains unaffected.
+        -> It we change the internals of the argument variable, the original variable also gets changed.
+        -> The concept of call by value is the same for objects as well.
+    
+
+    Anonymous function:
+        -> These are the function that do not have any name.
+            eg. 
+                let multiply = function (x, y){
+                    let p = x * y;
+                    return p;
+                };
+
+                let r = multiply(5, 10);
+        -> They are mainly used in objects.
+    

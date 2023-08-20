@@ -1,0 +1,59 @@
+Learning objective:
+    -> Explain sessions.
+    -> Apply the concept of sessions in PHP.
+
+Session: It is a small piece of information stored on the server (host computer).
+
+    eg. Let say there are 4 users who are viwing particular website so for every user
+    website create a seprate sessions that is user specific and the data of the courponding 
+    user is stored in there respative sessions we can see for every indivisual user the website have
+    seprate user_id now each session has unique session id through which there sessions can be access 
+    it is there session id's that are stored as cookies on the browser of each user.
+    suppose all these user have close the website and they no longer viweing the website so now
+    one of these user visites the website again the session id which is stored in browser as a cookie
+    will go along with HTTP request that how cookie works and from the session id the host computer fetch 
+    the coresponding session from that session it will fetch the stored user_id using which it can fetch other
+    user related information from the database.
+
+implementing Session in PHP: 
+    -> session_start(): what happens when we call this function its expect the browser to send a cookie
+     with the name "PHPSESSID" along with the HTTP request and this PHPSESSID contains a specific session id 
+     the function uses it to fetch coresponding session assigns what every its contains to $_SESSION superglobal variable.
+     using the $_SESSION variable we can access infromation stored in SESSION like this.
+        eg. $_SESSION['user_id'] = 3; or $user_id = $_SESSION['user_id'];
+    
+Unable to locate PHPSESSID why?
+    -> The user is visiting the website for the first time.
+    -> The user has deleted the cookie from the browser.
+    -> The user has edited the session id which does not match to the session stored on the server.
+    -> The session stored in the server has expired or deleted.
+    
+    In such cases when the session_start() is not able to locate PHPSESSID cookie
+    for which every mention reasion it will create new session the server and assign 
+    what every is stores to $SESSION variable for it to be access by PHP code by default
+    this session is empty $_SESSION variable can be use to store any new information in
+    the session and as response go back the coresponding session id of session is stored 
+    in user browser in the form of cookie with the name PHPSESSID this also insures that
+    the next time when user open any web page on this website the Cookie with the name
+    PHPSESSID storing the session id will definatlly come along with the HTTP request. 
+
+Summary: 
+    -> session_start() finds the session and assigns it to $_SESSION variable.
+    -> Using $_SESSION variable without calling session_start() will throw an error.
+        Note: For every request $_SESSOIN stores different session based on associated users 
+        $_SESSION like a temprery variable the actual sessions are stored in file system on the 
+        host computer.
+
+    -> Note: As a good pratice we have to check  $_SESSION variable has any values that is set.
+    for that we have $_isset() function.
+
+    -> isset(): This function ensures the session has the user_id set and its not set to null only
+    then it try to print the name(eg. example).
+
+    -> session_destroy(): This function allow ous to delete the data of any session and the reasion 
+    we use this function to delete the session of a user and makes the user log out from the account.
+
+    Note: We have to first use the session_start() this is because to destroy any session we need to 
+    first fetch the session courponding to user which is done by session start function if we first 
+    defind the session_destroy() the file simply throw an error.
+

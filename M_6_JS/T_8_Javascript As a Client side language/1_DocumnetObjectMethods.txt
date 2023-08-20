@@ -1,0 +1,49 @@
+Learning objective:
+    -> Explain DOM.
+    -> Access HTML elements using DOM.
+
+Features of Javascript:
+    -> It allows us to capture user actions in the form of javascript events.
+
+    -> It allows us to make changes to the existing HTML elements on a web page.
+
+
+Accessing HTML elements:
+    -> DOM: Document Object Model 
+        -> It is programming interface.
+        -> It helps to access the HTML elements of a web page in the form of javascript objects.
+    
+    Methods: 
+        -> getElementsByClassName(): It return the array of Node elements.
+            eg.
+            let els = document.getElementsByClassName("para");
+            alert(els[0].innerHTML);
+
+        -> getElementById(): It return the single Node element.
+            eg.
+            let el = document.getElementById("p1");
+            alert(el.innerHTML);
+
+        -> getElementsByTagName(): It return the array of Node elements.
+            eg.
+            let els = document.getElementsByTagName("p");
+            alert(els[0].innerHTML);
+
+        -> querySelectorAll(): It return the array of Node elements But you have to give
+         the css selector with class or id name.
+            eg.
+            let els = document.querySelectorAll(".para");
+            alert(els[0].innerHTML);
+
+                OR
+
+            let els = document.querySelectorAll("#p1");
+            alert(els[0].innerHTML);
+
+
+Object Types:
+    -> Array() Type: let arr = new Array();
+
+    -> String() Type: let s = new String();
+
+    -> Node() Type: let el = document.getElementById("abc");

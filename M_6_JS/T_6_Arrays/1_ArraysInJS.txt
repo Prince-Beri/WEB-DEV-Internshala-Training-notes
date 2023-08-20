@@ -1,0 +1,43 @@
+Learning objective:
+    -> Explain arrays.
+    -> Define an array in javascript.
+    -> Explain push() and pop().
+    -> Explain how for-of loop is used in an array with the help of an example.
+
+What is an array?
+    -> It is a special type of variable that can store multiple values, provided they
+    are of the same type.
+    eg. let array_name = [item1, item2, item3 .... item-n];
+
+Define an array in JS;
+    -> let modules = ['HTML', 'CSS', 'Bootstrap', 'DBMS', 'PHP'];
+    -> get the elements of an array
+        eg.
+        let modules = ['HTML', 'CSS', 'Bootstrap', 'DBMS', 'PHP'];
+        for(let element in modules){
+            document.write(modules[element] + " " );
+        }
+
+    -> Editing value of an array elements:
+        eg. modules[1] = 'Bootstrap';
+    
+    -> Adding a new array element:
+        eg. modules[5] = 'Javascript';
+    
+Arrays are objects: Javascript allows us to define arrays using objects.
+    -> let modules = new Array("HTML", "CSS", "Bootstrap", "DBMS", "PHP");
+
+
+Array methods:
+    -> push(): It is used to add an element at the end of an array.
+
+    -> pop(): It fetches the last element of the array and then removes it from 
+    the array.
+
+for-of loop:
+    -> It is exclusively used for arrays.
+    -> It iterates through all the elements of an array.
+    
+
+
+

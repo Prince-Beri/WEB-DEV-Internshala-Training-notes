@@ -1,0 +1,7 @@
+Learning objective:
+    -> Address some common problems and their solutions while creating a table.
+
+Problem 1. Redundancy due to tightly coupled attributes.
+Problem 2. Incomplete information.
+    -> To address these 2 problems we need to break the table into small tables. one for each Entity
+        eg. placement_infomation -> we sepratlly create 2 tables students and compaines.

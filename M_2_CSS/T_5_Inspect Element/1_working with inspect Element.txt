@@ -1,0 +1,7 @@
+Learning Objectives
+    -> Explain the importance of the inspect element.
+    -> Explore various tabs present on the inspect element panel.
+    -> Edit the CSS code of any web page and see how it affects the web page.
+
+Inspect Elemen: It is browser integrated developer's tool that is present in almost all  widely used web browsers.
+Explore the Inspect element option.

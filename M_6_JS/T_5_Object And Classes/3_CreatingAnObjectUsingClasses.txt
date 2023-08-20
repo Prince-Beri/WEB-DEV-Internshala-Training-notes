@@ -1,0 +1,43 @@
+Learning objective:
+    -> Create an object using classes.
+
+Ways to create an object:
+    -> Using object initializer.
+    -> Using new Object().
+    -> Using function constructor.
+    -> Classes.(Interduce in 2015 with es6).
+        eg.
+        class Car{
+            constructor(make, model, year){
+                this.make = make;
+                this.model = model;
+                this.year = year;
+                this.display = function(){
+                    document.write(this.make + this.model, this.year);
+                };
+            }
+        };
+
+Q. why do we need classes to create an object if the syntax is similar to that of a
+function constructor.
+    -> It offers a convenient syntax.
+    -> It allows us to create the function outside the constructor.
+        eg.
+        class Car{
+            constructor(make, model, year){
+                this.make = make;
+                this.model = model;
+                this.year = year;   
+            }
+            
+            display(){
+                document.write(this.make + this.model, this.year);
+            };
+        };
+    
+    Note: Accessing properties and methods are the same as Function constructor.
+
+for-in loop:
+    -> It is exulsively used for objects in javascript.
+    -> It iterates through all the properties in an object.
+

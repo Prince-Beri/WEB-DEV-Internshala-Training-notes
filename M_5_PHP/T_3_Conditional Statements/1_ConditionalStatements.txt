@@ -1,0 +1,23 @@
+Learning objectives:
+    -> Explain different conditional statements.
+    -> Apply different conditional statements in a PHP code.
+
+if(boolean_expression){
+    // code to execute only if the boolean_expression
+    evaluates to True
+    ...
+    ...
+}
+// code that execute irrespective of the value of boolean_expression.
+...
+...
+... if statements execute some code if one condition is true.
+
+
+if else statement: It executes some code even if the condition is false.
+
+if-elseif-else statement: if we have more then 2 conditions.
+
+Switch statement: It is used to select one out of multiple blocks of code 
+    associated with different conditions.
+

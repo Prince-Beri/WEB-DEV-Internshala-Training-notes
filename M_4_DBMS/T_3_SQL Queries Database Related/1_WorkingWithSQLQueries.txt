@@ -1,0 +1,13 @@
+Learning objective:
+    -> Execute various SQL queries related to the database using MySQL.
+
+SQL queries for:
+    -> Databases
+    -> Tables
+    -> Records
+
+SQL queries deals with Databases:
+    -> SELECT DATABASE (); It's show ous which database we are working on.
+    -> CREATE DATABASE name_of_database; how to create new database.
+    -> USE name_of_database; to select the one database from many databases.
+    -> DROP DATABASE name_of_database; to delete the database.

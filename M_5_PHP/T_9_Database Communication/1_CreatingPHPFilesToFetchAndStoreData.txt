@@ -1,0 +1,8 @@
+Learning objective:
+    -> Create a PHP file to fetch data from a form and store it in a table.
+    -> Create a PHP file to fetch data from the database.
+
+Prerequisites: 
+    -> Registration form.
+    -> Table to store the user data.
+    -> Database 

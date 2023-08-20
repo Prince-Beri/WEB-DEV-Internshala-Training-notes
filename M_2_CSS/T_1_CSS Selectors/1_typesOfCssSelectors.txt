@@ -1,0 +1,40 @@
+selector { 
+    property-1: value-1;
+    property-2: value-2;
+}
+-> Selector is used to select one or more elements to which we want to apply the style.
+-> Property means the CSS properties which we want to apply to the selector.
+    Example: font-color, background-color, etc.
+-> Values correspond to the specific style properties for the selected elements.
+
+1. Elemnets/Type Selectors
+    -> They are used to style all the elements of a particular type at once.
+
+2. ID Selectors
+    -> They are used to style only a single elements of a particular type.
+
+    -> Naming conventions for unique ID
+        1. It can have alphanumeric characters or hyphen or underscore.
+        2. It cannot have any special characters.
+        3. The name cannot start with a number.
+3. Class Selectors 
+    -> They are used when we want to style more than one element.
+
+4. Combination Selectors (.)
+    -> they are used when we want to style more than one element type of 
+        elements but class apply to more then one elements.
+    Example:
+    
+    <body>
+        <h1 class="xyz"> this is a heading. <h1>
+        <p class="xyz"> this is a paragraph with class xyz.</p>
+        <p> this is a paragraph with no class.</p>
+        <p class="xyz"> this is another paragraph with class xyz.</p>
+    </body>
+
+    so we want to select p element with class xyz.
+    -> we have to use combination selector.
+        -> p.xyz {
+            color: red;
+            background-color: skyblue;
+        }

@@ -1,0 +1,37 @@
+Leaning Objectives: 
+    -> Explain position CSS property.
+    -> Explain static, relative, fixed, and absolute position property values.
+    -> Apply z-index properties  to style a web page.
+
+Position: It helps us to move HTML elements from their existing positions.
+    -> It has 4 values: static, relative, fixed, and absolute.
+
+    -> position: static
+        -> Default value is different for different elements.
+        -> Elements cannot be moved from their position.
+
+    -> position: relative
+        -> It helps move an HTML element with respect to its original position.
+        -> position property have 4 different options top, right, bottom, left.
+            -> eg. position: relative;
+                   top: 50px;
+                   left: 20px;
+    
+    -> position: fixed
+        -> It moves the element with respect to the browser windows.
+        -> The position of the element remains fixed even if we scroll the web page.
+        -> The next element present after the positioned element takes the place of the positioned 
+            element leaving no gap.
+
+    -> position: absolute
+        -> It moves the element with respect to the nearest positioned ancestor element.
+        -> Nearest positioned ancestor element
+            -> Ancestor: Ancestor means any element that is present up in the HTML hierarchy.
+            -> Positioned: It means any element which has the position value other than the static.
+                It means the nearst ancestor that has a non-static position value.
+            
+
+Z-index: It is used to position an element along the z axis.
+    -> It is used mainly when there are overlapping elements and we want to explicitly put one elment over the other.
+    -> Higher the z-index value of an element, the more close it is to us.
+    -> It works only on positioned (non-static) elements.

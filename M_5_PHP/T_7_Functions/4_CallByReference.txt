@@ -1,0 +1,13 @@
+Learning objective:
+    -> Call a function by reference.
+
+Call by value: Till now we are using call by value approach to pass the values 
+to function. Its make the duplicate copy of the variable is created changes to the one copy
+of the variable inside the function don't effect the 2nd copy outside the function.
+any changes has to expecitly return and store back in variable outside the funcation.
+
+Call by reference: When we pass the argument to the function simply put '&' in
+front of variable now we pass the variable to this function it will not create any duplicate 
+copy rather the argument is point to the variable. any change to the argument will automatically
+effect the variable being passed. we will not required return the change value
+and store back outside.

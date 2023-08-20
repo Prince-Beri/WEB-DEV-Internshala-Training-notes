@@ -1,0 +1,5 @@
+Learning objective:
+    -> Export and import a database in windows OS.
+    
+-> Create a backup or export a database.
+-> Restore a database or import a database.

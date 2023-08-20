@@ -1,0 +1,30 @@
+Learning objectives:
+    -> Install NodeJS on your system.
+    -> Install Create React app locally.
+    -> Create a React project folder using Create React app.
+
+Untill now code which we writen in the app.js its is javascript extension or JSX code which is 
+technically not a javascript code browsers don't understand this to help them understand we included 
+a babel compiler in the form of a js file so that the browser can understand and run the JSX code.
+So what the browser do its first convert the jsx code into javascript code that the browser can understand
+using babel compiler and then it execute the converted javascript code to create the HTML elements.
+
+Now what happeds is that size of the babel compiler file is aroung 800kb this means when ever the browsers
+has to convert jsx into javascript code its need to load the file first.
+
+Create React App:
+    -> It creates an entire folder structure for our React project.
+    -> It helps to maintain our code as the project grows.
+    
+Setting React project:
+    -> First we need to install node js and npm to our computer.
+    
+    Create react app locally:
+    -> After install node js and npm goto command prompt enter the command 
+        "npm install -g create-react-app".
+    Note: In new version of react you dont need to use this command. you can 
+        execute next command directly.
+    
+    Create a React project folder using npx create-react-app.
+    
+    -> "npx create-react-app <name-of-react-app>".

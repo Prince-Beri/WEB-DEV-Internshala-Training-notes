@@ -1,0 +1,36 @@
+Learning objective:
+    -> Define a variable using 'let' , 'var' and 'const'.
+    -> List down the differences between 'let', 'var', 'const'.
+    -> List down various naming conventions followed while naming a variable.
+
+
+Defining / Declaring a Variable:
+    -> let : Newly introduced in 2015.
+    -> var: Old way of declarnig a variable.
+    -> const: It is used to declare a constant variable whose value cannot be changed.
+
+    let: let = "Hello World!"; assigning data to a variable using equals to operator(=).
+    Note: We cannot declare the same variable twice in the code.
+
+
+let vs var :
+    -> let: It has a block level scope.
+        -> Same variable cannot be declared twice.        
+        -> The variable needs to be initilized.
+
+    -> var: It has a function or global scope. 
+        -> We variable can be declared twice.
+        -> No need to initialize the variable.
+
+    strict: abc = "Hello World!"; document.write(abc); here we don't declare the variable.
+    but we are using it. To prevent that we use "use strict" like this in our code.
+
+
+Naming conventions:
+    -> Contain alphanumeric characters, underscore, and dollar.
+        eg. _abc, $abc, abc123, etc.
+    -> Cannot start with a number.
+        eg. 123abc, 123_abc, etc.
+    -> Cannot contain special characters like !, -, #, etc.
+    -> Case sensitive. eg. abc, ABC both are different variables.
+    
